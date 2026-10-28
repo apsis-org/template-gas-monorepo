@@ -1,0 +1,17 @@
+{
+  "name": "sample",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "build": "node ../../scripts/build.js sample",
+    "build:time": "node ../../scripts/build-time.js sample",
+    "deploy:dev": "node ../../scripts/deploy.js dev sample",
+    "deploy:prod": "node ../../scripts/deploy.js prod sample",
+    "open:dev": "node ../../scripts/open.js dev sample",
+    "open:prod": "node ../../scripts/open.js prod sample"
+  },
+  "spreadsheetUrls": {
+    "dev": "",
+    "prod": ""
+  }
+}
