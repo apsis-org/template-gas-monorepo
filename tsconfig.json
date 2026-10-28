@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    // Apps Script's V8 runtime supports ES2019; esbuild targets the same version
+    "target": "ES2019",
+    "module": "commonjs",
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    // Type checking only; esbuild does the bundling
+    "noEmit": true,
+    "types": ["google-apps-script"]
+  },
+  "include": ["packages/**/*.ts"],
+  "exclude": ["**/dist", "**/node_modules"]
+}

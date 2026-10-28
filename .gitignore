@@ -1,0 +1,23 @@
+# Dependencies
+node_modules/
+
+# Build output
+dist/
+
+# clasp settings (script IDs differ per developer and environment)
+packages/**/.clasp*.json
+
+# Environment variables
+.env
+.env.*
+!.env.example
+
+# Test coverage
+coverage/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log

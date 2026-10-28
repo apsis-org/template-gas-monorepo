@@ -1,0 +1,11 @@
+pre-commit:
+  commands:
+    biome:
+      glob: "*.{js,ts,cjs,mjs,json,jsonc}"
+      # Lint and format the staged files, then add the fixes to the commit
+      run: pnpm exec biome check --write --no-errors-on-unmatched --files-ignore-unknown=true {staged_files}
+      stage_fixed: true
+    versions:
+      glob: "**/package.json"
+      # Every package must share the root package.json version
+      run: node scripts/check-versions.js

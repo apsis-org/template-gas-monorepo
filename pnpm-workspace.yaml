@@ -1,0 +1,10 @@
+packages:
+  - packages/*
+
+allowBuilds:
+  esbuild: true
+  lefthook: true
+
+# Pin esbuild so the older version that esbuild-gas-plugin depends on is not installed alongside it
+overrides:
+  esbuild: ^0.28.2
