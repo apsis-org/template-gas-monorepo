@@ -1,0 +1,22 @@
+{
+  "permissions": {
+    "allow": ["Read(.env.example)"],
+    "deny": [
+      "Read(.env)",
+      "Read(*.env)",
+      "Read(.env.*)",
+      "Read(!.env.example)",
+      "Bash(cat *.env*)",
+      "Bash(head *.env*)",
+      "Bash(tail *.env*)",
+      "Bash(less *.env*)",
+      "Bash(more *.env*)",
+      "Bash(grep *.env*)",
+      "Bash(sed *.env*)",
+      "Bash(awk *.env*)",
+      "Bash(vim *.env*)",
+      "Bash(nano *.env*)",
+      "Bash(bat *.env*)"
+    ]
+  }
+}
